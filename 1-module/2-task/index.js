@@ -23,7 +23,7 @@ function isValid(name) {
   }
 
   for (let i = 0; i < nameArr.length; i++) {
-    console.log(nameArr[i]);
+     
     if (nameArr[i] == " ") {
       return false;
     }
