@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<title>Занятие 4: Список друзей</title>
+<script src="index.js"></script>
+<script>
+  /**
+   * @typedef {Friend}
+   * @prop {string} firstName
+   * @prop {string} lastName
+   */
+
+  let friends = [
+    {
+      firstName: 'Artsiom',
+      lastName: 'Mezin'
+    },
+    {
+      firstName: 'Ilia',
+      lastName: 'Kantor'
+    },
+    {
+      firstName: 'Christopher',
+      lastName: 'Michael'
+    }
+  ];
+
+  document.body.appendChild(makeFriendsList(friends));
+</script>
