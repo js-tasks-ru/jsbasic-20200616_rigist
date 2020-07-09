@@ -82,3 +82,4 @@ elem.addEventListener( "click" , () => { }); */
 //let rSchetchik = WidthOfSlide;
 
 //let lSchetchik = WidthOfSlide;
+//---
