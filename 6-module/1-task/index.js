@@ -30,5 +30,18 @@
  */
 export default class UserTable {
   constructor(rows) {
+
+    this.rows = rows.map(item => `<tr><td>${item.name}</td><td>${item.age}</td><td>${item.salary}</td><td>${item.city}</td><td><button onclick="this.parentElement.parentElement.remove()">X</button></td></tr>`).join('');
+
+    let AddTable = document.createElement('TABLE');
+
+    AddTable.innerHTML = this.rows;
+    
+    let elem = AddTable;
+
+    this.elem = elem;
+ 
   }
+
 }
+
