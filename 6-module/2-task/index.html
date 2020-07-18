@@ -37,14 +37,14 @@ card.elem.dispatchEvent(new CustomEvent("product-add", {
   detail: this.product.id, bubbles: true
 })); */
 
-let CardButton = document.querySelector('.card__button');
+/* let CardButton = document.querySelector('.card__button');
 
 
 
 CardButton.addEventListener("click", function(event) {
   let EventCard = new CustomEvent("product-add", {detail: this.product.id, bubbles: true});
     CardButton.dispatchEvent(EventCard);
-  });
+  }); */
 
 /*   CardButton.dispatchEvent(new CustomEvent("product-add", {
     detail: this.product.id, bubbles: true
