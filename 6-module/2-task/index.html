@@ -24,6 +24,52 @@
     });
 
     holder.append(card.elem);
+
+    
+//let CardButton = document.querySelector('.card__button');
+
+
+/* card.elem.addEventListener("click", function(event) {
+  event.detail.product.id;
+});
+
+card.elem.dispatchEvent(new CustomEvent("product-add", {
+  detail: this.product.id, bubbles: true
+})); */
+
+/* let CardButton = document.querySelector('.card__button');
+
+
+
+CardButton.addEventListener("click", function(event) {
+  let EventCard = new CustomEvent("product-add", {detail: this.product.id, bubbles: true});
+    CardButton.dispatchEvent(EventCard);
+  }); */
+
+/*   CardButton.dispatchEvent(new CustomEvent("product-add", {
+    detail: this.product.id, bubbles: true
+  })); */
+
+/* 22222222222
+card.elem.addEventListener("product-add", function(event) {  
+    event.detail;  
+  });
+
+  
+  let event = new CustomEvent("product-add", {detail: card.id, bubbles: true});  
+  CardButton.dispatchEvent(event);
+ */
+
+/* 
+  card.elem.addEventListener("click", function(event) {
+    event.detail.product.id;
+  });
+
+  let eventBtn = new CustomEvent("product-add", {detail: this.product.id, bubbles: true});
+
+  CardButton.dispatchEvent(eventBtn);
+ */
+  //CardButton.dispatchEvent(new );
   </script>
 </body>
 

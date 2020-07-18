@@ -63,3 +63,18 @@ new CustomEvent("product-add", { // имя события должно быть 
 ```
 
 Про пользовательские события можно прочитать в статье - [Генерация пользовательских событий](https://learn.javascript.ru/dispatch-events).
+
+```js
+//DEL
+
+let CardButton = document.querySelector('.card__button');
+
+
+  CardButton.addEventListener("click", function(event) {
+    event.detail.product.id;
+  });
+
+  CardButton.dispatchEvent(new CustomEvent("product-add", {
+    detail: this.product.id, bubbles: true
+  }));
+```

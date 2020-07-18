@@ -29,7 +29,7 @@
 <h2>Результат выполнения вашего кода:</h2>
 
 <script type="module">
-  import UserTable from './index.js';
+  import UserTable from './index.js';  //---$$$
 
   let rows = [
     {
@@ -58,8 +58,108 @@
     }
   ];
 
-  let table = new UserTable(rows);
-  document.body.append(table.elem);
+//=================
+/*   class UserTable {
+  constructor(rows) {
+
+    this.rows = rows.map(item => `<tr><td>${item.name}</td><td>${item.age}</td><td>${item.salary}</td><td>${item.city}</td><td><button onclick="this.parentElement.parentElement.remove()">X</button></td></tr>`).join('');
+
+    let AddTable = document.createElement('TABLE');
+
+    AddTable.innerHTML = this.rows;
+
+    let elem = AddTable;
+
+    this.elem = elem;
+
+    
+
+    
+ 
+  } */
+
+  
+
+  //DelButton() { 
+    
+
+  //}
+//}
+//==============
+
+  let table = new UserTable(rows);//---$$$
+  //console.log(table);
+  
+  document.body.append(table.elem);//---$$$
+
+
+
+
+
+  //----test
+ /*  function TestTable (rows) {
+
+  let TestTab1 = rows.map(item => `<tr><td>${item.name}</td><td>${item.age}</td><td>${item.salary}</td><td>${item.city}</td><td><button>X</button></td></tr>`)
+
+  console.log('TestTab1=' ,TestTab1);
+
+  return TestTab1;//users.filter(u => u.age <= age).map(u => `${u.name}, ${u.balance}`).join('\r\n')
+
+ //17-18
+  }  
+
+
+let AddTable = document.createElement('TABLE');
+
+
+
+console.log('1',TestTable(rows));
+console.log(TestTable(rows)[0]);
+console.log(TestTable(rows)[1]);
+console.log(TestTable(rows)[2]);
+console.log(TestTable(rows)[3]);
+
+AddTable.innerHTML = TestTable(rows).join('');
+
+console.log('addtab', AddTable);
+
+
+document.body.append(AddTable);
+
+let elemButton = document.querySelector('button');
+
+elemButton.addEventListener( "click" , () => { elemButton.parentElement.parentElement.remove();}); */
+
+
+//111111111111111
+//let elemTable= document.querySelector('BODY > TABLE');
+
+    //this.elemTable = elemTable;
+
+    //console.log('elemTable=', elemTable);
+    
+
+    
+    
+
+/*     elemButton.addEventListener( "click" , (event) => {
+      
+    console.log('event.target=', event.target);
+      
+
+    if ('BUTTON' === event.target.tagName) {
+			event.target.remove();
+		}
+      
+      //elemButton.parentElement.parentElement.remove();
+    
+    }); */
+
+    //this.elemButton = elemButton;
+
+
+/////////111111111111
+
 
 </script>
 </body>
